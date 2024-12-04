@@ -1,0 +1,8 @@
+[package]
+name = "schedule-template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+soph = { version = "0.28.0", default-features = false }
+soph-schedule = { version = "0.28.0", default-features = false }
