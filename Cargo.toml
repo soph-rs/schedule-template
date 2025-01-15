@@ -1,8 +1,25 @@
+[workspace]
+resolver = "2"
+members = ["app", "bootstrap"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70.0"
+
+[workspace.dependencies]
+soph = { version = "0.29.0", default-features = false }
+soph-schedule = { version = "0.29.0", default-features = false }
+
+# workspace
+app = { path = "app" }
+bootstrap = { path = "bootstrap" }
+
 [package]
 name = "schedule-template"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-soph = { version = "0.29.0", default-features = false }
-soph-schedule = { version = "0.29.0", default-features = false }
+bootstrap = { workspace = true }
+soph = { workspace = true }

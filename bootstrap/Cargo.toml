@@ -1,0 +1,9 @@
+[package]
+name = "bootstrap"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+app = { workspace = true }
+soph = { workspace = true }
+soph-schedule = { workspace = true }
